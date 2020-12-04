@@ -7,9 +7,7 @@ let package = Package(
     name: "SimpleOAuth2",
     platforms: [
         .iOS(.v13),
-        .macOS(.v11),
-        .tvOS(.v13),
-        .watchOS(.v6)
+        .macOS(.v10_15)
     ],
     products: [
         
