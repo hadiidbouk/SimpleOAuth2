@@ -32,6 +32,18 @@
 		FA4C6514257A37AD008F7CF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C6500257A37AB008F7CF8 /* ContentView.swift */; };
 		FA4C6515257A37AD008F7CF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4C6501257A37AC008F7CF8 /* Assets.xcassets */; };
 		FA4C6516257A37AD008F7CF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4C6501257A37AC008F7CF8 /* Assets.xcassets */; };
+		FA4C6560257AAB81008F7CF8 /* CredentialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C655F257AAB81008F7CF8 /* CredentialsView.swift */; };
+		FA4C6561257AAB81008F7CF8 /* CredentialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C655F257AAB81008F7CF8 /* CredentialsView.swift */; };
+		FA4C65F6257ABDB1008F7CF8 /* OAuth2Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C64D3257A35D8008F7CF8 /* OAuth2Models.swift */; };
+		FA4C65F7257ABDB1008F7CF8 /* OAuth2Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C64D0257A35D8008F7CF8 /* OAuth2Error.swift */; };
+		FA4C65F8257ABDB1008F7CF8 /* OAuth2Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C64D4257A35D8008F7CF8 /* OAuth2Manager.swift */; };
+		FA4C65F9257ABDB1008F7CF8 /* JsonDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C64D1257A35D8008F7CF8 /* JsonDecoder+Extensions.swift */; };
+		FA4C65FA257ABDB1008F7CF8 /* OAuth2+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C64D2257A35D8008F7CF8 /* OAuth2+Extensions.swift */; };
+		FA4C65FF257ABDB2008F7CF8 /* OAuth2Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C64D3257A35D8008F7CF8 /* OAuth2Models.swift */; };
+		FA4C6600257ABDB2008F7CF8 /* OAuth2Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C64D0257A35D8008F7CF8 /* OAuth2Error.swift */; };
+		FA4C6601257ABDB2008F7CF8 /* OAuth2Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C64D4257A35D8008F7CF8 /* OAuth2Manager.swift */; };
+		FA4C6602257ABDB2008F7CF8 /* JsonDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C64D1257A35D8008F7CF8 /* JsonDecoder+Extensions.swift */; };
+		FA4C6603257ABDB2008F7CF8 /* OAuth2+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C64D2257A35D8008F7CF8 /* OAuth2+Extensions.swift */; };
 		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_40 /* SimpleOAuth2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* SimpleOAuth2Tests.swift */; };
 		OBJ_41 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
@@ -55,6 +67,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FA4C658B257AB1DF008F7CF8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA4C65ED257ABD7D008F7CF8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		FA4C64D0257A35D8008F7CF8 /* OAuth2Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2Error.swift; sourceTree = "<group>"; };
 		FA4C64D1257A35D8008F7CF8 /* JsonDecoder+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JsonDecoder+Extensions.swift"; sourceTree = "<group>"; };
@@ -69,6 +104,7 @@
 		FA4C650D257A37AD008F7CF8 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4C650F257A37AD008F7CF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA4C6510257A37AD008F7CF8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		FA4C655F257AAB81008F7CF8 /* CredentialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsView.swift; sourceTree = "<group>"; };
 		OBJ_12 /* SimpleOAuth2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOAuth2Tests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -115,6 +151,7 @@
 				FA4C64FF257A37AB008F7CF8 /* DemoApp.swift */,
 				FA4C6500257A37AB008F7CF8 /* ContentView.swift */,
 				FA4C6501257A37AC008F7CF8 /* Assets.xcassets */,
+				FA4C655F257AAB81008F7CF8 /* CredentialsView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -210,6 +247,7 @@
 				FA4C6502257A37AD008F7CF8 /* Sources */,
 				FA4C6503257A37AD008F7CF8 /* Frameworks */,
 				FA4C6504257A37AD008F7CF8 /* Resources */,
+				FA4C658B257AB1DF008F7CF8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +265,7 @@
 				FA4C6509257A37AD008F7CF8 /* Sources */,
 				FA4C650A257A37AD008F7CF8 /* Frameworks */,
 				FA4C650B257A37AD008F7CF8 /* Resources */,
+				FA4C65ED257ABD7D008F7CF8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +288,8 @@
 			dependencies = (
 			);
 			name = SimpleOAuth2;
+			packageProductDependencies = (
+			);
 			productName = SimpleOAuth2;
 			productReference = "SimpleOAuth2::SimpleOAuth2::Product" /* SimpleOAuth2.framework */;
 			productType = "com.apple.product-type.framework";
@@ -317,6 +358,8 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
+			packageReferences = (
+			);
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -355,8 +398,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4C65FA257ABDB1008F7CF8 /* OAuth2+Extensions.swift in Sources */,
+				FA4C65F6257ABDB1008F7CF8 /* OAuth2Models.swift in Sources */,
+				FA4C65F9257ABDB1008F7CF8 /* JsonDecoder+Extensions.swift in Sources */,
 				FA4C6513257A37AD008F7CF8 /* ContentView.swift in Sources */,
+				FA4C65F7257ABDB1008F7CF8 /* OAuth2Error.swift in Sources */,
 				FA4C6511257A37AD008F7CF8 /* DemoApp.swift in Sources */,
+				FA4C65F8257ABDB1008F7CF8 /* OAuth2Manager.swift in Sources */,
+				FA4C6560257AAB81008F7CF8 /* CredentialsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,8 +413,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4C6603257ABDB2008F7CF8 /* OAuth2+Extensions.swift in Sources */,
+				FA4C65FF257ABDB2008F7CF8 /* OAuth2Models.swift in Sources */,
+				FA4C6602257ABDB2008F7CF8 /* JsonDecoder+Extensions.swift in Sources */,
 				FA4C6514257A37AD008F7CF8 /* ContentView.swift in Sources */,
+				FA4C6600257ABDB2008F7CF8 /* OAuth2Error.swift in Sources */,
 				FA4C6512257A37AD008F7CF8 /* DemoApp.swift in Sources */,
+				FA4C6601257ABDB2008F7CF8 /* OAuth2Manager.swift in Sources */,
+				FA4C6561257AAB81008F7CF8 /* CredentialsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +508,13 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DerivedData/SimpleOAuth2/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/DerivedData/SimpleOAuth2/Build/Products/Debug",
+					"$(PROJECT_DIR)/iOS",
+					"$(PROJECT_DIR)/macOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -520,6 +582,13 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DerivedData/SimpleOAuth2/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/DerivedData/SimpleOAuth2/Build/Products/Debug",
+					"$(PROJECT_DIR)/iOS",
+					"$(PROJECT_DIR)/macOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -584,6 +653,13 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DerivedData/SimpleOAuth2/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/DerivedData/SimpleOAuth2/Build/Products/Debug",
+					"$(PROJECT_DIR)/iOS",
+					"$(PROJECT_DIR)/macOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -653,6 +729,13 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DerivedData/SimpleOAuth2/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/DerivedData/SimpleOAuth2/Build/Products/Debug",
+					"$(PROJECT_DIR)/iOS",
+					"$(PROJECT_DIR)/macOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
