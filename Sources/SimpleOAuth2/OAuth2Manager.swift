@@ -8,15 +8,15 @@
 import AuthenticationServices
 import Combine
 
-class OAuth2Manager: NSObject, ASWebAuthenticationPresentationContextProviding {
+public class OAuth2Manager: NSObject, ASWebAuthenticationPresentationContextProviding {
 
-    var subscriptions: [AnyCancellable] = []
+    private var subscriptions: [AnyCancellable] = []
     
-    func presentationAnchor(for session: ASWebAuthenticationSession) -> ASPresentationAnchor {
+    public func presentationAnchor(for session: ASWebAuthenticationSession) -> ASPresentationAnchor {
         return ASPresentationAnchor()
     }
 
-    func signIn(with request: OAuth2Request) -> Future<OAuth2Credential, Error> {
+    public func signIn(with request: OAuth2Request) -> Future<OAuth2Credentials, Error> {
         return Future { [weak self] completion in
             guard let self = self else { return }
             guard let components = URLComponents(string: request.redirectUri),
@@ -77,7 +77,7 @@ private extension OAuth2Manager {
         }
     }
     
-    func requestToken(for url: URL) -> AnyPublisher<OAuth2Credential, Error> {
+    func requestToken(for url: URL) -> AnyPublisher<OAuth2Credentials, Error> {
         var request =  URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
@@ -90,7 +90,7 @@ private extension OAuth2Manager {
                 }
                 return data
             }
-            .decode(type: OAuth2Credential.self, decoder: JSONDecoder.current)
+            .decode(type: OAuth2Credentials.self, decoder: JSONDecoder.current)
             .eraseToAnyPublisher()
     }
 }

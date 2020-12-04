@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum OAuth2Scope: String, CaseIterable {
+public enum OAuth2Scope: String, CaseIterable {
     case api
     case readUser = "read_user"
     case readApi = "read_api"
@@ -21,7 +21,7 @@ enum OAuth2Scope: String, CaseIterable {
     case email
 }
 
-struct OAuth2Credential: Codable {
+public struct OAuth2Credentials: Codable {
     let accessToken: String
     let tokenType: String
     let refreshToken: String
@@ -30,11 +30,25 @@ struct OAuth2Credential: Codable {
     let idToken: String
 }
 
-struct OAuth2Request {
+public struct OAuth2Request {
     let authUrl: String
     let tokenUrl: String
     let clientId: String
     let redirectUri: String
     let clientSecret: String
     let scopes: [OAuth2Scope]
+    
+    public init(authUrl: String,
+                tokenUrl: String,
+                clientId: String,
+                redirectUri: String,
+                clientSecret: String,
+                scopes: [OAuth2Scope]) {
+        self.authUrl = authUrl
+        self.tokenUrl = tokenUrl
+        self.clientId = clientId
+        self.redirectUri = redirectUri
+        self.clientSecret = clientSecret
+        self.scopes = scopes
+    }
 }

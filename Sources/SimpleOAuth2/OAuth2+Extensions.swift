@@ -7,17 +7,17 @@
 
 import Foundation
 
-extension OAuth2Credential {
-    private static let key = "OAuth2CredentialKey"
+public extension OAuth2Credentials {
+    private static let key = "OAuth2CredentialsKey"
 
     func save() {
         let data = try? JSONEncoder().encode(self)
-        UserDefaults.standard.set(data, forKey: OAuth2Credential.key)
+        UserDefaults.standard.set(data, forKey: OAuth2Credentials.key)
     }
     
-    static func load() -> OAuth2Credential? {
+    static func load() -> OAuth2Credentials? {
         guard let credentialData = UserDefaults.standard.data(forKey: key),
-              let credential = try? JSONDecoder.current.decode(OAuth2Credential.self, from: credentialData) else { return nil }
+              let credential = try? JSONDecoder.current.decode(OAuth2Credentials.self, from: credentialData) else { return nil }
         return credential
     }
 }

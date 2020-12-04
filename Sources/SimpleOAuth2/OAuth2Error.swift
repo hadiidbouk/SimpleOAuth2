@@ -7,10 +7,10 @@
 
 import Foundation
 
-enum OAuth2Error: String, LocalizedError {
+public enum OAuth2Error: String, LocalizedError {
     case invalidRedirectUri
     
-    var localizedDescription: String {
+    public var localizedDescription: String {
         switch self {
         case .invalidRedirectUri: return "Invalid Redirect Uri"
         }
