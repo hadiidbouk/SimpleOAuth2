@@ -24,16 +24,16 @@ Button(action: {
                             print(error.localizedDescription)
                         default: break
                         }
-                    }, receiveValue: { credential in
-                        credential.save()
-                        print(credential)
+                    }, receiveValue: { credentials in
+                        credentials.save()
+                        print(credentials)
                     })
             }) {
                 Text("Login with GitLab")
             }
 ```
 
-You can also use `save()` function to save the `OAuth2Credentials` instance to your `UserDefaults` and load the credentials using this staic function `OAuth2Credentials.load()`.
+You can also use `save()` function to save the `OAuth2Credentials` instance to your `UserDefaults` and load the credentials using this static function `OAuth2Credentials.load()`.
 
 
 ## About this package
