@@ -42,7 +42,7 @@ You can also use `save()` function to save the `OAuth2Credentials` instance to y
 
 ## About this package
 - It will never be published on Cocoapods neither on Carthage.
-- Only Authorization Code flow supported since it's the recommanded flow for native mobile apps.
+- Only Authorization Code flow supported since it's the recommended flow for native mobile apps.
 
-## Comming soon
+## Coming soon
 - Adding refresh function for refreshing your token (if needed).
