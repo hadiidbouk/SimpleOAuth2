@@ -19,7 +19,7 @@ struct ContentView: View {
                                        clientId: "",
                                        redirectUri: "",
                                        clientSecret: "",
-                                       scopes: OAuth2Scope.allCases)
+                                       scopes: ["api, profile"])
     
     var body: some View {
         NavigationView {
