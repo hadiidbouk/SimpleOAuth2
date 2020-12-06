@@ -173,6 +173,14 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		FA4C6624257D71C2008F7CF8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA4C64D1257A35D8008F7CF8 /* JsonDecoder+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,7 +235,7 @@
 		OBJ_8 /* SimpleOAuth2 */ = {
 			isa = PBXGroup;
 			children = (
-				FA4C64D1257A35D8008F7CF8 /* JsonDecoder+Extensions.swift */,
+				FA4C6624257D71C2008F7CF8 /* Extensions */,
 				FA4C64D2257A35D8008F7CF8 /* OAuth2+Extensions.swift */,
 				FA4C64D0257A35D8008F7CF8 /* OAuth2Error.swift */,
 				FA4C64D4257A35D8008F7CF8 /* OAuth2Manager.swift */,
