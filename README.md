@@ -19,7 +19,7 @@ let request: OAuth2Request = .init(authUrl: "",
                                    clientId: "",
                                    redirectUri: "",
                                    clientSecret: "",
-                                   scopes: OAuth2Scope.allCases) // `OAuth2Scope` contains all the scopes available.
+                                   scopes: [])
 Button(action: {
                 cancellable = auth.signIn(with: request)
                     .sink( receiveCompletion: { result in
