@@ -46,7 +46,6 @@
 		FA4C6603257ABDB2008F7CF8 /* OAuth2+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C64D2257A35D8008F7CF8 /* OAuth2+Extensions.swift */; };
 		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_40 /* SimpleOAuth2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* SimpleOAuth2Tests.swift */; };
-		OBJ_41 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
 		OBJ_43 /* SimpleOAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SimpleOAuth2::SimpleOAuth2::Product" /* SimpleOAuth2.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,7 +105,6 @@
 		FA4C6510257A37AD008F7CF8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		FA4C655F257AAB81008F7CF8 /* CredentialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsView.swift; sourceTree = "<group>"; };
 		OBJ_12 /* SimpleOAuth2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOAuth2Tests.swift; sourceTree = "<group>"; };
-		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		"SimpleOAuth2::SimpleOAuth2::Product" /* SimpleOAuth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SimpleOAuth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SimpleOAuth2::SimpleOAuth2Tests::Product" /* SimpleOAuth2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SimpleOAuth2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_12 /* SimpleOAuth2Tests.swift */,
-				OBJ_13 /* XCTestManifests.swift */,
 			);
 			name = SimpleOAuth2Tests;
 			path = Tests/SimpleOAuth2Tests;
@@ -457,7 +454,6 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_40 /* SimpleOAuth2Tests.swift in Sources */,
-				OBJ_41 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
