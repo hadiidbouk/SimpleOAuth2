@@ -8,6 +8,13 @@ A simple implementation of OAuth2 in Swift using Combine and AuthenticationServi
 
 The goal of this package is to make it as simple as possible :)
 
+## Installation
+
+You can add SimpleOAuth2 to an Xcode project by adding it as a package dependency.
+
+  1. From the **File** menu, select **Swift Packages › Add Package Dependency…**
+  2. Enter "https://github.com/hadiidbouk/SimpleOAuth2" into the package repository URL text field
+
 ## Usage
 
 You need to pass your client credentials to the signIn method using `OAuth2Request`
