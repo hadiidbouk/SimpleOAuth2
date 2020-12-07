@@ -1,6 +1,6 @@
 # SimpleOAuth2
 
-![workflow badge](https://github.com/hadiidbouk/SimpleOAuth2/workflows/Swift/badge.svg)
+![workflow badge](https://github.com/hadiidbouk/SimpleOAuth2/workflows/build/badge.svg)
 ![version badge](https://img.shields.io/github/v/tag/hadiidbouk/SimpleOAuth2?label=Version)
 ![platform compatibility](https://img.shields.io/badge/Platform%20Compatibility-iOS%20%7C%20macOS-blue)
 
