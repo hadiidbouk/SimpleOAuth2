@@ -11,11 +11,11 @@ import Foundation
 /// The only required property is the accessToken other properties are optional
 /// Following the RFC 6749 OAuth 2.0 https://tools.ietf.org/html/rfc6749#section-5.1
 public struct OAuth2Credentials: Codable {
-    let accessToken: String
-    let tokenType: String?
-    let refreshToken: String?
-    let scope: String?
-    let expiresIn: Int?
+    public let accessToken: String
+    public let tokenType: String?
+    public let refreshToken: String?
+    public let scope: String?
+    public let expiresIn: Int?
     
     enum CodingKeys: String, CodingKey {
         case accessToken
